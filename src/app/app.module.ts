@@ -11,7 +11,7 @@ import { MessagesComponent } from './messages/messages.component';
 import { MessageService } from './message.service';
 import { AppRoutingModule } from './/app-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
-
+import { RouterModule, Routes } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -24,7 +24,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule
   ],
   providers: [HeroService, UserService, MessageService],
   bootstrap: [AppComponent]
