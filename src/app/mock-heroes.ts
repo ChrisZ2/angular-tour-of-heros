@@ -1,5 +1,8 @@
 import { Hero } from './hero';
+<<<<<<< HEAD
 
+=======
+>>>>>>> 53ef24a74462c4cac87652c8bc07a22a5ce7aeab
 export const HEROES: Hero[] = [
   { id: 11, name: 'Iron Man' },
   { id: 12, name: 'Captain America' },

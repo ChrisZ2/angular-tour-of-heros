@@ -11,6 +11,7 @@ export class MessageService {
     this.messages.push(message);
   }
 
+<<<<<<< HEAD
   getLast() {
     if (this.messages.length === 0) {
       return "No Message";
@@ -19,6 +20,8 @@ export class MessageService {
     }
   }
 
+=======
+>>>>>>> 53ef24a74462c4cac87652c8bc07a22a5ce7aeab
   clear() {
     this.messages = [];
   }
