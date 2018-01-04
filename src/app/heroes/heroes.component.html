@@ -1,16 +1,14 @@
-
 <h2>
   The detail of the hero
 </h2>
-<div class = "container" *ngIf="heroes">
+<div class="container" *ngIf="heroes">
   <ul class="heroes">
-    <li *ngFor="let hero of heroes" [class.selected] = "hero === selectedHero" (click)="onSelect(hero)">
-      <span class = "badge">
+    <li *ngFor="let hero of heroes" [class.selected]="hero === selectedHero" (click)="onSelect(hero)">
+      <a routerLink="/detail/{{hero.id}}" <span class="badge">
         {{hero.id}}
-      </span>
-      {{hero.name}}
+        </span>
+        {{hero.name}}
+      </a>
     </li>
   </ul>
 </div>
-
-
